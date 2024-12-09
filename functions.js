@@ -22,14 +22,4 @@ function processFruits() {
     <p>Fruit 3: ${fruit3} with quantity ${quantity3}</p>
   `;
 }
- document.getElementById("showImageBtn").addEventListener("click", function () {
-      // Get the image container
-      const imageContainer = document.getElementById("imageContainer");
 
-      // Toggle the display of the image
-      if (imageContainer.style.display === "none") {
-        imageContainer.style.display = "block";
-      } else {
-        imageContainer.style.display = "none";
-      }
-    });
