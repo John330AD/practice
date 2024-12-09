@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: #fff;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: #444;
+    padding: 10px 0;
+}
+
+#game-status {
+    margin: 10px 0;
+}
+
+#game-status p {
+    margin: 5px 0;
+}
+
+#game-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#game-area {
+    position: relative;
+    height: 400px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #333;
+    overflow: hidden;
+}
+
+#shapes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.shape {
+    width: 60px;
+    height: 60px;
+    background: #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.shape:hover {
+    transform: scale(1.1);
+    background: #666;
+}
+
+.icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+.shape.revealed .icon {
+    display: block;
+}
+
+.shape.revealed {
+    background: #222;
+}
+
+#item-list {
+    font-size: 18px;
+}
+
+#item-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#item-list li i {
+    font-size: 24px;
+    color: #fff;
+}
+
+#next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #5a5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#next-button:hover {
+    background: #484;
+}
